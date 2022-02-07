@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Mochiy+Pop+P+One&family=Pacifico&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.border{
+    border: 1px solid black;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+h1{
+    
+    text-align: center;
+        color: white;
+
+}
+h2{
+    
+    text-align: center;
+        color:gold;
+        font-family: 'Bebas Neue', cursive;
+        font-family: 'Lobster', cursive;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        font-family: 'Pacifico', cursive;
+}
+div img{
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+/*desktop*/
+@media (min-width:1024px){
+#cuerpo{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "menu peliculas peliculas"
+    "menu estrenos estrenos" 
+    "menu footer footer"   
+    ;
+    grid-template-columns: 20% auto 10%;
+    grid-template-rows: 100px 2fr  2fr 50px;
+}   
+.mas{
+    transform: translateX(60vh);
+}
+
+.oculto{
+    display: none;
+}
+
+header{
+    
+    grid-area: header;
+    background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+}
+footer{
+    grid-area: footer;
+}
+section#peliculas{
+    grid-area: peliculas;
+    background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    
+}
+section#estrenos{
+    grid-area: estrenos;
+    background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+}
+
+nav{
+    grid-area: menu;
+    background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+}
+footer{
+    background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    
+}
+a{
+    text-decoration: none;
+}
+footer img{
+
+width: 20px;
+
+
+}
+}
+
+
+/*smartphone*/
+@media (max-width:480px){
+
+    #cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "header" 
+        "peliculas " 
+        "estrenos "
+        "footer"   
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 2fr  2fr 2fr ;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }   
+
+    header{
+    
+        grid-area: header;
+        background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    }
+    footer{
+        grid-area: footer;
+    }
+    section#peliculas{
+        grid-area: peliculas;
+        background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+        
+    }
+    section#estrenos{
+        grid-area: estrenos;
+        background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    }
+    
+    nav{
+        display: none;
+    }
+    footer{
+        background-color: #29539b;
+background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    footer img{
+    
+    width: 20px;
+    
+    
+    }
+    .atras{
+        background-color: #f5d020;
+background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    }
+    .mas{
+        transform: translateX(20vh);
+    }
+
+}
